@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Personal Portfolio Website - Gigih Sahid Pratama</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/3838769dcd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <style>
+            div .btn-box{
+                list-style-type: none;
+            }
+        </style>
+        <nav>
+            <img src="images/Logo Gigih 2.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Education">Study</a></li>
+                <li><a href="#Work">Work</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Secreto</a></li>
+                <i class="fa-solid fa-square-xmark"onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Accounting Student</p>
+            <h1>Hi! I'm <span>Gigih</span><br>Sahid.P from Indonesia</h1>
+        <div class="btn-box">
+            <li><a href="#About">Let's Talk</a></li>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-----------About-------------->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user revisi 1.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Gigih Sahid Pratama or Gigih for short is Undergraduate 1st Year Accounting Student at University State Of Semarang. I'm From Wonogiri, Central Java Indonesia. Curently i hired in position Human Resource Development member at EDS and become EFL 11th Student. I'm one of the Public Speaking and Relation Enthusiast. Active in so many University Organization and Event. Having spirit and will to work at Creative And Social Industries in Economic Scope.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('organization')">Oganization</p>
+                </div>
+                <div class="tab-contents active-tab"id="skills">
+                    <ul>
+                        <li><span>DESIGN AND ART</span><br>Have background in art and Creative Industries with many Portfolio</li>
+                        <li><span>DIGITAL MARKETING</span><br>Becoming a social media and project Manager of many project that rely on attract people</li>
+                        <li><span>ACCOUNTING</span><br>Microsoft excel, Myob Accounting Software, and Intermediate Accounting Skils</li>
+                        <li><span>PUBLIC SPEAKING</span><br>Have a Experience to becoming an MC and Moderator of Event and Bootcamp.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                            <li><span>MC EXPERIENCE</span><br>Mc in Study Banding HIMA AKUNTANSI UNNES x HMJA KOMISI FEB UII,</li>
+                            <li><span>DIGITAL DESIGNING</span><br>Making Arakata'23 Logo's</li>
+                            <li><span>PROJECT MANAGER</span><br>Designing and monitoring PDH production of arakata'23</li>
+                            <li><span>SOCIAL MEDIA MANAGEMENT</span><br>Making and posting routine instagram content when still in the Internship HIMA AKUNTANSI</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="organization">
+                    <ul>
+                        <li><span>YOUTH RANGER INDONESIA</span><br>Rangers in Youth Ranger Indonesia Semarang 2023 - Now</li>
+                        <li><span>ENGLISH DEBATE SOCIETY</span><br>HRD Member at EDS 2023 - Now</li>
+                        <li><span>ECONOMIC FUTURE LEADER</span><br>Student and becaming part of EFL 11th Generation 2023 - Now</li>
+                        <li><span>HIMA AKUNTANSI</span><br>Internship at Hima Akuntansi MEDCOM Division (4 Month)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-links");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+
+<!-----------------------------------Education----------------------------------->
+<div id="Education">
+    <div class="container">
+        <h1 class="sub-title">Education's</h1>
+        <div class="Education-list">
+            <div>
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h2>University State Of Semarang</h2>
+                <p>Curently 1st Year Majoring Accounting in University State Of Semarang (2023 - Now)</p>
+                <a href="#">More Info</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-building-columns"></i>
+                <h2>SMA NEGERI 2 WONOGIRI</h2>
+                <p>Finished Highschool in MIPA Curriculum at SMA Negeri 2 Wonogiri (2020 - 2023)</p>
+                <a href="#">More Info</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-school"></i>
+                <h2>SMP NEGERI 1 SELOGIRI</h2>
+                <p>Finished Middleschool in SMP Negeri 1 Selogiri (2017 - 2020)</p>
+                <a href="#">More Info</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------Work------------------------------->
+<div id="Work">
+    <div class="container">
+        <h1 class="sub-title">Work's</h1>
+        <div class="Work-list">
+            <div class="Arakata">
+                <img src="images/porto 1.jpeg">
+                <h2>PDH And Arakata'23 Logos</h2>
+                <a href="#">More Info</a>
+            </div>
+            <div class="Feed">
+                <img src="images/porto 2.jpeg" alt="">
+                <h2>Feed IG</h2>
+                <a href="#">More Info</a>
+            </div>
+            <div class="Art">
+                <img src="images/porto 3.jpeg" alt="">
+                <h2>My Art</h2>
+                <a href="#">More Info</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------Portfolio----------------------------------->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="My-Links">
+            <div class="Links">
+                <img src="images/Work 1 gigih.jpeg">
+                <div class="Layer">
+                    <h3>My LinkedIn</h3>
+                    <p>My Portfolio and Platform to connect to Many people and Many Workplace</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="Links">
+                <img src="images/Work 2 gigih.jpeg">
+                <div class="Layer">
+                    <h3>My Linktree</h3>
+                    <p>My Terminal With All the Link of Information of Myself to Connect</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="Links">
+                <img src="images/work 3 gigih.jpeg">
+                <div class="Layer">
+                    <h3>My Blog</h3>
+                    <p>My Portfolio and Platform to Make a Typing and Write All of My Thought</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+<!-------------------------------------Contact---------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> gigihspratama@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +62 896-3142-5133</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/gigihh_shdp?igsh=a3dtZmE4aXNhaXYz"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/gigihsahidpratama"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://gigihsahidpratama01.blogspot.com/?m=1"><i class="fa-brands fa-blogger"></i></a>
+                    <a href=""https://youtube.com/@GigihSahidPratama?si=ktX7tXrtIp6Q_XaP><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="images/CV gigih sahid PKKMB FEB (1).pdf" download class="btn btn2">Download CV</a>
+                <a href="https://secreto.site/id/aonhe7" class="btn btn3">Secreto</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Gigih.<i class="fa-brands fa-nfc-symbol"></i> Made with personal data of Gigih's.</p>
+    </div>
+</div>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxFtPGpCScgVu4Atj42T1KOUtuoHoDD8X0E9QSQFlrMVofOb7_DUstm-PHguIBf3AabNQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<style>
+    a:link{
+        text-decoration: none;
+    }
+    a{
+        color: white;
+    }
+
+
+</body>
+</html>
