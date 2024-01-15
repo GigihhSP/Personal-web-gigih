@@ -1,2 +1,2 @@
-# Personal-web-gigih
+# Gigih-Personal-Web
 Personal Website Portfolio By Gigih Sahid Pratama
